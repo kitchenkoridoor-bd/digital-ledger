@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Koridoor - Cake Baking Items</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff8f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #e91e63, #ff4081);
+            color: white;
+            padding: 25px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .tagline {
+            font-size: 16px;
+            font-style: italic;
+            opacity: 0.95;
+            margin-bottom: 10px;
+        }
+        .info-badges {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        
+        /* About Owner Section */
+        .owner-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 35px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            text-align: left;
+        }
+        .owner-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e91e63;
+        }
+        .owner-details {
+            max-width: 500px;
+        }
+        .owner-details h3 {
+            margin: 0 0 5px;
+            color: #e91e63;
+            font-size: 22px;
+        }
+        .owner-title {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .owner-bio {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            width: 260px;
+            padding: 18px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #eee;
+        }
+        .card h3 {
+            font-size: 19px;
+            margin: 15px 0 8px;
+            color: #222;
+        }
+        .price {
+            color: #e91e63;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            width: 80%;
+        }
+        .contact-box {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .contact-box h3 {
+            margin-top: 0;
+            color: #e91e63;
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .btn-call {
+            background-color: #007bff;
+        }
+        .btn-wa {
+            background-color: #25d366;
+        }
+        .btn-fb {
+            background-color: #1877f2;
+            margin-top: 20px;
+            display: inline-block;
+            width: auto;
+            padding: 12px 25px;
+        }
+        footer {
+            margin-top: 40px;
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Logo Photo -->
+        <img src="logo.jpg" alt="Kitchen Koridoor Logo" class="logo">
+        <h1>Kitchen Koridoor</h1>
+        <div class="tagline">"গ্রাহকের সন্তুষ্টিই আমাদের আত্মতৃপ্তি"</div>
+        <div class="info-badges">
+            <div class="badge">📍 সুব্রত প্লাজা, গাঙ্গিনারপাড়, ময়মনসিংহ</div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Owner Section -->
+        <div class="owner-section">
+            <img src="owner.jpg" alt="Akhi Rani Dash" class="owner-img">
+            <div class="owner-details">
+                <h3>আঁখি রানী দাস (Akhi Rani Dash)</h3>
+                <div class="owner-title">নারী উদ্যোক্তা ও স্বত্বাধিকারী — Kitchen Koridoor</div>
+                <div class="owner-bio">
+                    স্বাগতম! আমি আঁখি রানী দাস। ময়মনসিংহের গাঙ্গিনারপাড়ে কেক বেকিং ও ডেকোরেশনের সকল প্রিমিয়াম সরঞ্জাম নিয়ে আপনাদের সেবায় নিয়োজিত। আমাদের লক্ষ্য হলো সুলভ মূল্যে মানসম্মত বেকিং টুলস পৌঁছে দেওয়া। গ্রাহকের সন্তুষ্টিই আমাদের আসল সাফল্য।
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">আমাদের কিছু সেরা প্রডাক্ট</h2>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400" alt="Cake Mold">
+                <h3>সিলিকন কেক মোল্ড</h3>
+                <div class="price">৩৫০ টাকা</div>
+                <a href="https://wa.me/8801723454255?text=Hello,%20I%20want%20to%20order%20Silicone%20Cake%20Mold" class="btn" target="_blank">অর্ডার করুন (WhatsApp)</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Nozzle Set">
+                <h3>স্টেইনলেস স্টিল নজেল সেট</h3>
+                <div class="price">৪৫০ টাকা</div>
+                <a href="https://wa.me/8801723454255?text=Hello,%20I%20want%20to%20order%20Nozzle%20Set" class="btn" target="_blank">অর্ডার করুন (WhatsApp)</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=400" alt="Birthday Candles">
+                <h3>বার্থডে ম্যাজিক ক্যান্ডেল</h3>
+                <div class="price">১২০ টাকা</div>
+                <a href="https://wa.me/8801723454255?text=Hello,%20I%20want%20to%20order%20Birthday%20Candles" class="btn" target="_blank">অর্ডার করুন (WhatsApp)</a>
+            </div>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="contact-box">
+            <h3>যেকোনো প্রয়োজনে সরাসরি যোগাযোগ করুন</h3>
+            <p>পণ্য সম্পর্কে জানতে বা সরাসরি অর্ডার করতে নিচের মাধ্যমে যোগাযোগ করুন:</p>
+            <div class="contact-buttons">
+                <a href="tel:01723454255" class="btn btn-call" style="width: auto;">📞 কল করুন: 01723454255</a>
+                <a href="https://wa.me/8801723454255" class="btn btn-wa" style="width: auto;" target="_blank">💬 WhatsApp মেসেজ দিন</a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/" class="btn btn-fb" target="_blank">আমাদের ফেসবুক পেজ ভিজিট করুন</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kitchen Koridoor | সুব্রত প্লাজা, গাঙ্গিনারপাড়, ময়মনসিংহ</p>
+    </footer>
+
+</body>
+</html>
